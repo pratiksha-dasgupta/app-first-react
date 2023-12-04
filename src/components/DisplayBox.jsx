@@ -2,6 +2,6 @@ import React from 'react'
 
 export default function DisplayBox({text}) {
   return (
-    <div id="print-number">{text}</div>
+    <div id="print-number">{text?text:""}</div>
   )
 }
