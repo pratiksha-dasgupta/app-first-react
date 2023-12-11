@@ -2,6 +2,7 @@ table{
 font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  margin-left: 20%;
 }
 td, th {
     border: 1px solid #dddddd;
@@ -12,6 +13,7 @@ td, th {
   button{
     margin-top: 20px;
     color: lightcoral;
+    margin-left: 20%;
   }
   span{
     margin-top: 20px;

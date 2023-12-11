@@ -10,7 +10,7 @@ export default function AddStudent({ setStudentlist, hideForm }) {
       currentlist.push(newStudent);
       return [...currentlist];
     });
-    hideForm(false);
+    hideForm(true);
   }
   const closeStudentForm = () => {
     hideForm(false);

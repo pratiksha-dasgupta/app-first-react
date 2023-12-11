@@ -52,6 +52,7 @@ const Studentlist = () => {
           setStudentlist={setStudentlist}
           selectedstud={selectedstud}
           setSelectedstud={setSelectedstud}
+          hideEditForm={setEditShow}
         />
       ) : null}
     </div>

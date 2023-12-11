@@ -2,7 +2,8 @@ import React from "react";
 export default function EditStudent({setStudentlist,
   studentlist,
   selectedstud,
-  setSelectedstud}) {
+  setSelectedstud,
+hideEditForm}) {
   const updateStudent = () => {
     studentlist.map((student, index) => {
       if (student.id === selectedstud.id) {
@@ -14,8 +15,13 @@ export default function EditStudent({setStudentlist,
         alert("Can't Update");
       }
     });
+  
   };
-
+  const closeEditForm = () => {
+    hideEditForm(false);
+    selectedstud.name("");
+    selectedstud.phone("");
+  };
   return (
     <div>
       <span>
@@ -46,6 +52,7 @@ export default function EditStudent({setStudentlist,
         type="button"
         className="btn btn-danger"
         style={{ marginLeft: "5px" }}
+        onClick={closeEditForm}
       >
         Close
       </button>
